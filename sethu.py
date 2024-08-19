@@ -7,7 +7,6 @@ st.set_page_config(page_title="Sethumadhavan V's Portfolio", page_icon=":briefca
 st.title("Sethumadhavan V")
 st.subheader("M.Tech Software Engineering")
 
-
 # Define the main function
 def main():
     # Initialize session state if not present
@@ -52,7 +51,7 @@ def main():
                 
     # Display the selected section
     if st.session_state.page == "Home":
-        st.title("👋 Welcome to Sethumadhavan V'")
+        st.title("👋 Welcome to Sethumadhavan V's Portfolio")
         st.write(
             "Hello! I’m Sethumadhavan V, a recent M.Tech graduate in Software Engineering from Vellore Institute of Technology, currently based in Sholingur. I’m passionate about data analysis and leveraging my expertise in Python and SQL to turn complex data into actionable insights.\n\n"
             "My academic and project experiences have equipped me with a solid foundation in data analysis, visualization, and software development. I am skilled in creating dynamic data solutions and ensuring data security and integrity through encryption and advanced algorithms.\n\n"
@@ -197,15 +196,15 @@ def main():
         st.markdown(courses)
     
     elif st.session_state.page == "Extracurricular Activities":
-        st.header("🎭 Extracurricular Activities")
-        activities = """
+        st.header("🎉 Extracurricular Activities")
+        extracurricular_activities = """
         - **Cultural Event Organizer**  
-          Organized and managed various cultural events, including planning, coordination, and execution of activities.
-
-        - **Volunteering**  
-          Participated in various community service projects and initiatives, contributing time and skills to support local causes.
+          Organized and managed cultural events at VIT, enhancing leadership and teamwork skills.
+          
+        - **Finance Head**  
+          Managed finances for various student clubs and events, ensuring budget adherence and financial transparency.
         """
-        st.markdown(activities)
+        st.markdown(extracurricular_activities)
 
 # Run the main function
 if __name__ == "__main__":
