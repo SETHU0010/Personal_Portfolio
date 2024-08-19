@@ -1,2 +1,2 @@
-streamlit==1.23.0
-pandas==2.0.2
+pip install streamlit==1.23.0
+pip install pandas==2.0.2
