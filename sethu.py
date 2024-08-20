@@ -13,11 +13,42 @@ def main():
     if 'page' not in st.session_state:
         st.session_state.page = "Home"
 
-    # Sidebar for navigation
-    st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["Home", "Contact", "Education", "Skills", "Projects", "Certifications", "Courses", "Extracurricular Activities"])
-    st.session_state.page = page
+    # Top navigation buttons
+    st.header("")
+    col1, col2, col3, col4, col5, col6, col7, col8 = st.columns(8)
+    
+    with col1:
+        if st.button("Home"):
+            st.session_state.page = "Home"
+    
+    with col2:
+        if st.button("Contact"):
+            st.session_state.page = "Contact"
+    
+    with col3:
+        if st.button("Education"):
+            st.session_state.page = "Education"
+    
+    with col4:
+        if st.button("Skills"):
+            st.session_state.page = "Skills"
+    
+    with col5:
+        if st.button("Projects"):
+            st.session_state.page = "Projects"
+                
+    with col6:
+        if st.button("Certifications"):
+            st.session_state.page = "Certifications"
+    
+    with col7:
+        if st.button("Courses"):
+            st.session_state.page = "Courses"
 
+    with col8:
+        if st.button("Extracurricular Activities"):
+            st.session_state.page = "Extracurricular Activities"
+                
     # Display the selected section
     if st.session_state.page == "Home":
         st.title("👋 Welcome to Sethumadhavan V's Portfolio")
@@ -155,42 +186,25 @@ def main():
     
     elif st.session_state.page == "Courses":
         st.header("📚 Courses")
-        courses_data = {
-            "Course": [
-                "Master Data Science",
-                "Programming for Everybody",
-                "Applied Data Science",
-                "Data Science Specialization",
-                "Machine Learning",
-                "Advanced SQL",
-                "Financial Analysis with Python",
-                "PowerBI Basics"
-            ],
-            "Institution": [
-                "GUVI - ZEN Class, IIT-M",
-                "University of Michigan | Coursera",
-                "IBM | Coursera",
-                "Johns Hopkins University | Coursera",
-                "Stanford University | Coursera",
-                "Codecademy",
-                "Udemy",
-                "Microsoft"
-            ]
-        }
-        df_courses = pd.DataFrame(courses_data)
-        st.dataframe(df_courses, width=700)
+        courses = """
+        - **Master Data Science**  
+          GUVI - ZEN Class ,IIT-M Advanced Programming Professional
+          
+          Apr 2024 - Present
+          
+        """
+        st.markdown(courses)
     
     elif st.session_state.page == "Extracurricular Activities":
         st.header("🎉 Extracurricular Activities")
-        st.write("""
+        extracurricular_activities = """
         - **Cultural Event Organizer**  
-          Organized and managed various cultural events and activities. Coordinated teams, handled logistics, and ensured successful 
-          execution of events.
-
+          Organized and managed cultural events at VIT, enhancing leadership and teamwork skills.
+          
         - **Finance Head**  
-          Managed financial aspects for various extracurricular activities. Handled budgeting, accounting, and financial planning to 
-          ensure smooth execution of activities.
-        """)
+          Managed finances for various student clubs and events, ensuring budget adherence and financial transparency.
+        """
+        st.markdown(extracurricular_activities)
 
 # Run the main function
 if __name__ == "__main__":
