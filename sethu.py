@@ -190,7 +190,7 @@ def main():
         - **Master Data Science**  
           GUVI - ZEN Class ,IIT-M Advanced Programming Professional
           
-          Apr 2024 - Present
+          Feb 2024 - Jul 2024
           
         """
         st.markdown(courses)
