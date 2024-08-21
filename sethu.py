@@ -23,12 +23,18 @@ def init_sidebar():
 
 # Define page content functions
 def home_page():
-    st.title("👋 Welcome to Sethumadhavan V's Portfolio")
+    st.title("👋 Welcome ")
+    
     st.write(
-        "Hello! I’m Sethumadhavan V, a recent M.Tech graduate in Software Engineering from Vellore Institute of Technology, currently based in Sholingur. I’m passionate about data analysis and leveraging my expertise in Python and SQL to turn complex data into actionable insights.\n\n"
-        "My academic and project experiences have equipped me with a solid foundation in data analysis, visualization, and software development. I am skilled in creating dynamic data solutions and ensuring data security and integrity through encryption and advanced algorithms.\n\n"
-        "I am currently advancing my knowledge in Master Data Science at GUVI - ZEN Class, IIT-M, and hold certifications in SQL, PowerBI, Marketing Management, and Financial Literacy. These qualifications enhance my ability to manage, analyze, and visualize data effectively.\n\n"
-        "In addition to technical skills, I excel in critical thinking, time management, and CRM, which enable me to tackle data challenges with creativity and efficiency. I am eager to contribute to a dynamic team and apply my skills to drive impactful business decisions. Feel free to explore my portfolio and connect with me on LinkedIn or GitHub to learn more about my work."
+        """
+        Hello! I'm Sethumadhavan V, a recent M.Tech graduate in Software Engineering from Vellore Institute of Technology. With expertise in Python and SQL, I am passionate about data analysis and leveraging data to drive impactful business decisions.
+
+        Currently, I am further honing my skills through the Master Data Science course at GUVI - ZEN Class, IIT-M. My experience includes working on diverse projects like secure data sharing, YouTube data harvesting, and interactive data visualization.
+
+        My goal is to contribute to a dynamic team as an entry-level data analyst, where I can apply my analytical skills and problem-solving abilities to uncover valuable insights and support data-driven decision-making.
+
+        Feel free to explore my projects and get in touch with me for any opportunities!
+        """
     )
 
 def contact_page():
@@ -48,6 +54,11 @@ def contact_page():
 def education_page():
     st.header("🎓 Education")
     education = """
+
+    - **Master Data Science**  
+      GUVI - ZEN Class ,IIT-M Advanced Programming Professional 
+      Feb 2024 – Jul 2024
+      
     - **M.Tech Integrated Software Engineering**  
       Vellore Institute of Technology, Vellore  
       2019 – 2024
@@ -129,40 +140,47 @@ def projects_page():
 
 def certifications_page():
     st.header("🏆 Certifications")
+    
     certifications = {
         "Certification": [
-            "Introduction to Computer Application",
-            "Marketing Management",
             "Data Science Math Skills",
             "Development of Real-Time Systems",
             "SQL",
             "Training of Trainers",
             "Financial Literacy",
-            "Fundamentals of Data Analytics",
-            "PowerBI"
+            "Fundamentals of Data Analytics"
         ],
         "Institution": [
-            "VIT Online Learning (VITOL) Institute",
-            "VIT Online Learning (VITOL) Institute",
             "Duke University | Coursera",
             "EIT Digital | Coursera",
             "CareerNinja | LearnTube",
             "NPTEL Swayam 2022",
             "UNICEF",
-            "Learn Future Skills Primely | NASSCOM 2022",
-            "GUVI Geek Networks, IITM Research Park"
+            "Learn Future Skills Primely | NASSCOM 2022"
         ]
     }
+    
     df_certifications = pd.DataFrame(certifications)
     st.dataframe(df_certifications)
 
 def courses_page():
     st.header("📚 Courses")
     courses = """
-    - **Master Data Science**  
-      GUVI - ZEN Class ,IIT-M Advanced Programming Professional
-      
-      Apr 2024 - Present
+    - **Introduction to Computer Application**  
+      VIT Online Learning (VITOL) Institute  
+      Link: [View Certificate](https://drive.google.com/file/d/1EMy2DzhcBwlNSxjCTci1ONwCcISC7JEH/view?usp=drive_link)
+
+    - **Marketing Management**  
+      VIT Online Learning (VITOL) Institute  
+      Link: [View Certificate](https://drive.google.com/file/d/1YPcWDWIFmxZ-hQnBnGGqEhEi9sfiYPBY/view?usp=drive_link)
+
+    - **PowerBI**  
+      GUVI Geek Networks  
+      Link: [View Certificate](https://www.guvi.in/share-certificate/46442ir71S1h7G6NE4)
+
+    - **Generative AI**  
+      GUVI Geek Networks  
+      Link: [View Certificate](https://www.guvi.in/share-certificate/2h47Id1eE19C165f7y)
     """
     st.markdown(courses)
 
@@ -170,20 +188,18 @@ def extracurricular_activities_page():
     st.header("🎉 Extracurricular Activities")
     extracurricular_activities = """
     - **Cultural Event Organizer**  
-      Organized and managed cultural events at VIT, enhancing leadership and teamwork skills.
-      
+      Organized and managed various cultural events at the university level. Coordinated with multiple teams, handled event logistics, 
+      and ensured successful execution of events.
+
     - **Finance Head**  
-      Managed budgets and financial planning for student events and activities.
+      Managed finances for student organizations and events. Oversaw budgeting, expense tracking, and financial reporting. Ensured 
+      transparency and accountability in financial operations.
     """
     st.markdown(extracurricular_activities)
 
-# Main function to render the selected page
+# Main function to display the selected page
 def main():
-    if 'page' not in st.session_state:
-        st.session_state.page = "Home"
-    
     init_sidebar()
-    
     if st.session_state.page == "Home":
         home_page()
     elif st.session_state.page == "Contact":
