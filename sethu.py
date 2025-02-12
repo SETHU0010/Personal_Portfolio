@@ -49,7 +49,7 @@ def contact_page():
     """
     st.markdown(contact_info)
     st.write("### 📄 Download Resume")
-    st.markdown("[Download Resume](https://drive.google.com/uc?export=download&id=1FQ0_z5B-mJS69dg8-YlTffNFwK_JADLA)")
+    st.markdown("[Download Resume](https://drive.google.com/file/d/1jmzA7mhg4qxoLXuBLNcZEPFHZoanP04C/view?usp=drive_link)")
 
 def education_page():
     st.header("🎓 Education")
