@@ -94,32 +94,75 @@ def skills_page():
 
 def projects_page():
     st.header("🚀 Projects")
-    st.write("""
-    ### 1. Secure Data Sharing of Personal Health Records in SQL Using AES Algorithm
-    Implemented AES algorithm for protecting personal health records in SQL environments.
 
+    st.markdown("""
+    ### 1. 🔐 Secure Data Sharing of Personal Health Records in SQL Using AES Algorithm  
+    **Key Skills:** Python, Streamlit, AES, MySQL  
+    - Developed a secure system for managing and sharing personal health records.  
+    - Implemented AES encryption for data confidentiality and secure MySQL storage.  
+    - Enabled keyword-based search and secure user authentication.  
+    - Built a user-friendly Streamlit interface with role-based access.  
     [🔗 GitHub](https://github.com/SETHU0010/SECURE_E_PERSON_HEALTH_CARE_SYSTEM_USING_AES_ALGORITHM)
 
-    ### 2. Uber Fare Prediction and Streamlit Web Application
-    ML model + Streamlit app for Uber fare estimates.  
-    [🚀 Streamlit App](https://uberfarepredictionandappwebapplication-t3fru4dygszajbwgqppgzv.streamlit.app/)
+    ---
 
-    ### 3. YouTube Data Harvesting and Warehousing using SQL and Streamlit
-    End-to-end solution for channel/video data tracking.  
-    [🎥 App](https://youtubedataharvestingandwarehousingusingsqlandapp-nzfhhsps4haa.streamlit.app/)
+    ### 2. 🚖 Uber Fare Prediction and Streamlit Web Application  
+    **Key Skills:** Python, Streamlit, AWS, Regression, EDA, Geospatial Analysis  
+    - Created a regression model to predict Uber ride fares.  
+    - Preprocessed geolocation and time-series data for training.  
+    - Developed a Streamlit app for real-time fare estimates.  
+    - Deployed on AWS for cloud accessibility and scalability.  
+    [🚀 App](https://uberfarepredictionandappwebapplication-t3fru4dygszajbwgqppgzv.streamlit.app/)
 
-    ### 4. Load Focus Testing for VTOP Website
-    Performance testing using Load Focus tools.  
+    ---
+
+    ### 3. 🎥 YouTube Data Harvesting and Warehousing using SQL and Streamlit  
+    **Key Skills:** Python, SQL, Streamlit, MongoDB, API Integration  
+    - Built a Streamlit app to fetch and store channel/video data from YouTube API.  
+    - Stored and managed data using SQL and NoSQL (MongoDB).  
+    - Enabled searchable dashboards for channel metrics and analytics.  
+    [📺 App](https://youtubedataharvestingandwarehousingusingsqlandapp-nzfhhsps4haa.streamlit.app/)
+
+    ---
+
+    ### 4. 🧠 Automated Resume Parsing and Skill Analysis System  
+    **Key Skills:** Python, Flask, Sentence-BERT, PyPDF2, Gemini API, HTML/CSS  
+    - Built an NLP-powered app to match resumes with job descriptions.  
+    - Extracted and analyzed skills, experience, and education from PDF/DOCX files.  
+    - Used Sentence-BERT and cosine similarity for semantic match scoring.  
+    - Integrated Google Gemini API for advanced parsing and ranking.  
+    - Developed an interactive and secure Flask-based web interface.  
+    [🧑‍💻 GitHub](https://github.com/SETHU0010/Automated-Resume-Parsing)
+
+    ---
+
+    ### 5. ⚙️ Load Focus Testing for VTOP Website  
+    **Key Skills:** Performance Testing, Load Focus, Web Monitoring, Analysis  
+    - Conducted performance/load testing on the VTOP university portal.  
+    - Simulated concurrent user access and analyzed bottlenecks.  
+    - Provided insights to improve backend response and scalability.  
     [📈 GitHub](https://github.com/SETHU0010/Load-Focus-Testing-for-VTOP-Website)
 
-    ### 5. Privacy Preserving Data Security Model in Cloud Using AES Algorithm
-    AES and BYOEK for cloud storage privacy.  
+    ---
+
+    ### 6. ☁️ Privacy Preserving Data Security Model in Cloud Using AES Algorithm  
+    **Key Skills:** AES, Cloud Security, Python, Cryptography, BYOEK  
+    - Designed a security model for cloud environments using AES and BYOEK.  
+    - Addressed secure storage and access of sensitive data in cloud platforms.  
+    - Evaluated risks and ensured robust access control mechanisms.  
     [🔒 GitHub](https://github.com/SETHU0010/Privacy-Preserving-Data-Security-Model-in-Cloud-Using-AES-Algorithm)
 
-    ### 6. Industrial Copper Modeling
-    Manufacturing data modeling using Streamlit & ML.  
-    [🏭 GitHub](https://github.com/SETHU0010/Industrial-Copper-Modeling)
+    ---
+
+    ### 7. 🏭 Industrial Copper Modeling  
+    **Key Skills:** Python, EDA, Regression, Streamlit, Feature Engineering  
+    - Solved real-world manufacturing domain problems related to pricing and sales.  
+    - Performed exploratory data analysis and handled outliers/skewness.  
+    - Built regression and classification models to predict selling price.  
+    - Created an interactive Streamlit app for real-time predictions and visualization.  
+    [🏗️ GitHub](https://github.com/SETHU0010/Industrial-Copper-Modeling)
     """)
+
 
 def certifications_page():
     st.header("🏆 Certifications")
