@@ -110,25 +110,86 @@ def education_page():
 def skills_page():
     st.header("💡 Skills")
 
-    skills_data = {
-        "Category": [
-            "Technical Skills",
-            "Libraries & Frameworks",
-            "Software & Tools",
-            "Research & Teaching Interests",
-            "Soft Skills",
-        ],
-        "Details": [
-            "Python, SQL",
-            "Pandas, NumPy, Flask, FastAPI, Streamlit, Seaborn, Matplotlib, Plotly, GenAI",
-            "Power BI, Microsoft Office, AWS Cloud, GitHub, Hugging Face, Postman, MySQL, Jupyter, VS Code",
-            "Machine Learning, Data Science, Artificial Intelligence, Software Engineering, Business Analytics, Cloud Deployment, Real-Time Analytics, Automation in Education",
-            "Critical Thinking, Research Writing, Teamwork, Experimentation, Version Control",
-        ]
-    }
+    # --- Technical Skills ---
+    st.subheader("🧑‍💻 Technical Skills")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("- Python")
+        st.write("- SQL")
+    with col2:
+        st.write("- Pandas")
+        st.write("- NumPy")
+    
+    st.markdown("---")
+    
+    # --- Libraries & Frameworks ---
+    st.subheader("📚 Libraries & Frameworks")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.write("- Flask")
+        st.write("- FastAPI")
+        st.write("- Streamlit")
+    with col2:
+        st.write("- Seaborn")
+        st.write("- Matplotlib")
+        st.write("- Plotly")
+    with col3:
+        st.write("- GenAI")
+    
+    st.markdown("---")
 
-    df_skills = pd.DataFrame(skills_data)
-    st.dataframe(df_skills, width=900)
+    # --- Tools & Software ---
+    st.subheader("🛠️ Software & Tools")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.write("- Power BI")
+        st.write("- Microsoft Office")
+        st.write("- MySQL")
+    with col2:
+        st.write("- GitHub")
+        st.write("- Hugging Face")
+        st.write("- Postman")
+    with col3:
+        st.write("- AWS Cloud")
+        st.write("- Jupyter Notebook")
+        st.write("- VS Code")
+
+    st.markdown("---")
+
+    # --- Research & Teaching Interests ---
+    st.subheader("🎓 Research & Teaching Interests")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("- Machine Learning")
+        st.write("- Data Science")
+        st.write("- Artificial Intelligence")
+        st.write("- Software Engineering")
+    with col2:
+        st.write("- Business Analytics")
+        st.write("- Cloud Deployment")
+        st.write("- Real-Time Analytics")
+        st.write("- Automation in Education")
+
+    st.markdown("---")
+
+    # --- Soft Skills ---
+    st.subheader("🤝 Soft Skills")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write("- Critical Thinking")
+        st.write("- Research Writing")
+        st.write("- Teamwork")
+    with col2:
+        st.write("- Experimentation")
+        st.write("- Version Control")
+
+    st.markdown("---")
+
+    # --- Languages ---
+    st.subheader("🌐 Languages")
+    st.write("- Tamil")
+    st.write("- English")
+
 
 
 def projects_page():
