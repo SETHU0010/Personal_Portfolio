@@ -5,19 +5,19 @@ import pandas as pd
 st.set_page_config(page_title="Sethumadhavan V's Portfolio", page_icon=":briefcase:", layout="wide")
 
 # Initialize the sidebar with emojis as icons and download resume option
-def init_sidebar():
-    st.sidebar.header("Navigation")
-    nav_options = {
-        "🏠 Home": "Home",
-        "📞 Contact": "Contact",
-        "🎓 Education": "Education",
-        "💡 Skills": "Skills",
-        "🚀 Projects": "Projects",
-        "🏆 Certifications": "Certifications",
-        "📚 Courses": "Courses",
-        "🎯 Internship": "Internship",  # New Internship Page
-        "🎉 Extracurricular Activities": "Extracurricular Activities",
-    }
+NAV_OPTIONS = {
+    "🏠 Home": "Home",
+    "📞 Contact": "Contact",
+    "🎓 Education": "Education",
+    "💡 Skills": "Skills",
+    "🚀 Projects": "Projects",
+    "🏆 Certifications": "Certifications",
+    "📚 Courses": "Courses",
+    "🎯 Internship": "Internship",
+    "💼 Professional Experience": "Professional Experience",
+    "🎉 Extracurricular Activities": "Extracurricular Activities",
+}
+
     selection = st.sidebar.radio("Go to", list(nav_options.keys()))
     st.session_state.page = nav_options[selection]
 
