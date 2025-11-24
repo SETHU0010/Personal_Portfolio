@@ -242,27 +242,6 @@ def professional_experience_page():
     st.header("💼 Professional Experience")
 
     st.markdown("""
-### 🖥️ Backend Developer in Python – Intern  
-*Mavdero Technologies*  
-📅 **Sep 2024 – Jul 2025**
-
-- Collaborated on the development and deployment of AI-based automation tools to optimize enterprise workflows.  
-- Applied machine learning techniques to real-time datasets, enhancing system efficiency and decision-making.  
-- Gained hands-on experience in advanced AI technologies and team-based agile development.
-
----
-
-### 🎓 Trainer – Data Analytics in Process Industries  
-*GUVI Geek Network Pvt. Ltd. | Naan Mudhalvan Initiative*  
-📅 **Feb 2025 – May 2025**
-
-- Conducted training sessions on data analytics concepts and applications in process industries.  
-- Designed and delivered hands-on workshops using Python, SQL, and Power BI.  
-- Mentored students, helping them build data-driven projects and gain industry-relevant skills.  
-- Developed structured course materials and assessments to ensure effective learning outcomes.
-
----
-
 ### 🧑‍🏫 Teaching Cum Research Assistant (TRA)  
 *Vellore Institute of Technology (VIT)*  
 📅 **Aug 2025 – Present**
