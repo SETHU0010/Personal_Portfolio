@@ -274,20 +274,30 @@ def certifications_page():
 
 def courses_page():
     st.header("📚 Courses")
-    courses = """
-- **Introduction to Computer Application**  
-  [📄 View Certificate](https://drive.google.com/file/d/1EMy2DzhcBwlNSxjCTci1ONwCcISC7JEH/view?usp=drive_link)
+    st.subheader("Completed Courses")
 
-- **Marketing Management**  
-  [📄 View Certificate](https://drive.google.com/file/d/1YPcWDWIFmxZ-hQnBnGGqEhEi9sfiYPBY/view?usp=drive_link)
+    courses = [
+        ("Introduction to Computer Application",
+         "https://drive.google.com/file/d/1EMy2DzhcBwlNSxjCTci1ONwCcISC7JEH/view?usp=drive_link"),
+        
+        ("Marketing Management",
+         "https://drive.google.com/file/d/1YPcWDWIFmxZ-hQnBnGGqEhEi9sfiYPBY/view?usp=drive_link"),
 
-- **PowerBI**  
-  [📄 View Certificate](https://www.guvi.in/share-certificate/46442ir71S1h7G6NE4)
+        ("PowerBI",
+         "https://www.guvi.in/share-certificate/46442ir71S1h7G6NE4"),
 
-- **Generative AI**  
-  [📄 View Certificate](https://www.guvi.in/share-certificate/2h47Id1eE19C165f7y)
-    """
-    st.markdown(courses)
+        ("Generative AI",
+         "https://www.guvi.in/share-certificate/2h47Id1eE19C165f7y")
+    ]
+
+    for name, link in courses:
+        col1, col2 = st.columns([3,1])
+        with col1:
+            st.write(f"**{name}**")
+        with col2:
+            st.markdown(f"[📄 Certificate]({link})")
+        st.markdown("---")
+
 
 def internship_page():
     st.header("🎯 Internship Experience")
