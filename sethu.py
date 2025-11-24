@@ -34,30 +34,53 @@ def init_sidebar():
         "[Download Resume](https://drive.google.com/file/d/1jmzA7mhg4qxoLXuBLNcZEPFHZoanP04C/view?usp=drive_link)"
     )
 
-# Define page content functions
 def home_page():
     st.title("👋 Welcome")
 
     st.write(
         """
-Hello! I'm **Sethumadhavan V**, a recent M.Tech graduate in Software Engineering from Vellore Institute of Technology.  
-With expertise in **Python** and **SQL**, I am passionate about data analysis and leveraging data to drive impactful business decisions.
+Hello! I’m **Sethumadhavan V**, a dedicated and hardworking **M.Tech graduate in Software Engineering** from Vellore Institute of Technology.
 
-I am currently:
-- Pursuing a **Doctor of Philosophy (Ph.D.) in Computer Science Engineering and Information Systems** at VIT, Vellore (Jul 2025 – Present).  
-- Enhancing my data skills through the **Master Data Science** course at **GUVI - ZEN Class, IIT-M**.
+I have strong technical skills in **Python** and **SQL**, and I enjoy turning raw data into meaningful insights.  
+I focus on writing clean code, solving problems, and building efficient systems.
 
-My experience includes:
-- Backend development with Python.  
-- AI-based automation tools.  
-- YouTube data harvesting and warehousing.  
-- Interactive data visualization and analytics dashboards.
+---
 
-My goal is to contribute to a dynamic team as an **entry-level data analyst / backend developer**, where I can apply my analytical skills and problem-solving abilities to uncover valuable insights and support data-driven decision-making.
+### 🎓 What I Am Doing Now
 
-Feel free to explore my projects and get in touch with me for any opportunities!
+- Pursuing my **Ph.D.** in *Computer Science Engineering and Information Systems* at **VIT, Vellore** (Jul 2025 – Present), where I am developing a strong **research mindset**.
+- Learning advanced, industry-required data skills through the **Master Data Science** program at **GUVI – ZEN Class, IIT-M**, improving my understanding of **machine learning, analytics, and automation**.
+
+---
+
+### 💼 My Experience Includes
+
+- Working as a **Python Backend Developer Intern**, gaining **hands-on experience** in real projects.
+- Building **AI-based automation tools** that improved workflow speed and accuracy.
+- Creating **YouTube data harvesting and warehousing systems**, handling large-scale data collections.
+- Designing **interactive dashboards**, with clear, user-friendly visualizations.
+- Performing **data cleaning, preprocessing, EDA, and data reporting** for better decision-making.
+- Developing **end-to-end machine learning solutions**, from data preparation to deployment.
+- Working on **real-time datasets** and solving practical industry problems.
+
+---
+
+### 🎯 My Goal
+
+My goal is to start my career as an **entry-level Data Analyst** or **Backend Developer**.  
+I want to apply my technical skills, analytical thinking, and problem-solving approach to real-world challenges.
+
+I aim to:
+
+- Build intelligent, data-driven solutions  
+- Work in a professional, growth-focused environment  
+- Learn advanced tools and technologies  
+- Contribute to impactful and meaningful projects  
+
+I am eager to **learn**, **improve**, and **make a positive contribution** to the team I join.
         """
     )
+
 
 def contact_page():
     st.header("📞 Contact Information")
