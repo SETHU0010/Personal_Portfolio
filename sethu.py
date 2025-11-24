@@ -109,22 +109,27 @@ def education_page():
 
 def skills_page():
     st.header("💡 Skills")
+
     skills_data = {
         "Category": [
             "Technical Skills",
-            "Tools and Software",
+            "Libraries & Frameworks",
+            "Software & Tools",
+            "Research & Teaching Interests",
             "Soft Skills",
-            "Languages"
         ],
         "Details": [
-            "Python 🐍, SQL 🗃️",
-            "Microsoft Office 🖥️, PowerBi 📊, GitHub 🧑‍💻",
-            "CRM 🗂️, Critical Thinking 🧠, Time Management ⏱️",
-            "Tamil, English"
+            "Python, SQL",
+            "Pandas, NumPy, Flask, FastAPI, Streamlit, Seaborn, Matplotlib, Plotly, GenAI",
+            "Power BI, Microsoft Office, AWS Cloud, GitHub, Hugging Face, Postman, MySQL, Jupyter, VS Code",
+            "Machine Learning, Data Science, Artificial Intelligence, Software Engineering, Business Analytics, Cloud Deployment, Real-Time Analytics, Automation in Education",
+            "Critical Thinking, Research Writing, Teamwork, Experimentation, Version Control",
         ]
     }
+
     df_skills = pd.DataFrame(skills_data)
-    st.dataframe(df_skills, width=700)
+    st.dataframe(df_skills, width=900)
+
 
 def projects_page():
     st.header("🚀 Projects")
