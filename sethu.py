@@ -77,28 +77,35 @@ def contact_page():
 
 def education_page():
     st.header("🎓 Education")
+    
     education = """
 - **Doctor of Philosophy (Ph.D.) – Computer Science Engineering and Information Systems**  
   *Vellore Institute of Technology, Vellore*  
   📅 **Jul 2025 – Present**
 
-- **Master Data Science**  
-  *GUVI - ZEN Class, IIT-M Advanced Programming Professional*  
-  📅 **Feb 2024 – Jul 2024**
-      
 - **M.Tech Integrated Software Engineering**  
   *Vellore Institute of Technology, Vellore*  
-  📅 **2019 – 2024**
-
+  **CGPA:** 7.65  
+  📅 **July 2019 – May 2024**
+  
+- **Master Data Science**  
+  *GUVI - ZEN Class, IIT-M Advanced Programming Professional*  
+  📅 **Feb 2024 – Jul 2024**  
+  **Grade:** A
+      
 - **Higher Secondary Education**  
   *Sri Ayyan Vidyashram Higher Sec School*  
-  📅 **2018 – 2019**
+  📅 **2018 – 2019**  
+  **Percentage:** 68.33
 
 - **Secondary School Leaving Certificate**  
   *Sri Ayyan Vidyashram Higher Sec School*  
-  📅 **2016 – 2017**
+  📅 **2016 – 2017**  
+  **Percentage:** 80.4
     """
+    
     st.markdown(education)
+
 
 def skills_page():
     st.header("💡 Skills")
