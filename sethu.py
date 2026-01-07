@@ -40,17 +40,13 @@ def home_page():
 
     st.write(
         """
-Hello! I’m **Sethumadhavan V**, a motivated and dedicated tech enthusiast.  
-I completed my **M.Tech in Software Engineering** from VIT, Vellore, and I am now pursuing my **Ph.D. in Computer Science Engineering and Information Systems**.
+        I am **Sethumadhavan V**, currently working as a **Teaching Cum Research Assistant at Vellore Institute of Technology (VIT)** and pursuing my **Ph.D. in Computer Science and Information Systems**. I hold an **M.Tech in Software Engineering** and have a strong foundation in **Python development, data science, and machine learning**.
 
-I have strong skills in **Python, SQL, Data Analysis, Machine Learning, and Cloud Deployment**.  
-I enjoy turning data into meaningful insights and building simple, useful applications.
+        Along with academics, I have gained valuable **industry and training experience**. I worked as a **Backend Developer (Python Intern) at Mavdero Technologies**, where I developed and deployed **AI-based automation tools** to optimize enterprise workflows. I also applied **machine learning techniques on real-time datasets** to improve system efficiency and support data-driven decision-making.
 
-I have worked as a **Backend Developer (Python Intern)** at Mavdero Technologies, where I helped develop AI-based automation tools and real-time data solutions.
+        In addition, I served as a **Trainer – Data Analytics in Process Industries** at **GUVI Geek Network Pvt. Ltd.** under the **Naan Mudhalvan Initiative**, where I delivered **hands-on training in Python, SQL, and Power BI**. I guided students in building **industry-oriented data analytics projects**, strengthening their practical and job-ready skills.
 
-My goal is to grow as a **Data Scientist and Researcher**, create impactful projects, and explore new technologies that solve real-world problems.
-
-Outside of work, I enjoy learning new things and improving myself every day.
+        I am passionate about **teaching, applied research, and mentoring students** using real-world examples. My academic and professional interests include **Machine Learning, Data Science, Artificial Intelligence, and Software Engineering**. My long-term goal is to grow as an **Assistant Professor**, contributing meaningfully to academics, research, and institutional development.
         """
     )
 
