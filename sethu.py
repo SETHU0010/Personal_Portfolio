@@ -31,7 +31,7 @@ def init_sidebar():
     st.sidebar.markdown("---")
     st.sidebar.write("📄 **Resume**")
     st.sidebar.markdown(
-        "[Download Resume](https://drive.google.com/file/d/1jmzA7mhg4qxoLXuBLNcZEPFHZoanP04C/view?usp=drive_link)"
+        "[Download Resume](https://drive.google.com/file/d/1LZSxkZ0_rYt4p3lvuBJoZO73S_Ow0XPb/view?usp=drive_link)"
     )
 
 
